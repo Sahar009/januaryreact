@@ -1,4 +1,24 @@
 #feature{
     height: 100vh;
     transition: 2s ease;
+    text-align: center;
+}
+#feature p{
+    color: black;
+}
+.prediction{
+    position: relative;
+}
+.prediction h3 {
+    margin: 2rem;
+}
+.icon{
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+.feature-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
 }
