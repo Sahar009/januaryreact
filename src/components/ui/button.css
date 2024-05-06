@@ -1,0 +1,16 @@
+a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+a:hover{
+    color:orangered
+}
+a.btn{
+    border: 1px solid #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
