@@ -17,11 +17,31 @@ export const Feature = () => {
         <div>
 
         </div>
-        <div className='prediction'>
-          <h3>Manchester - Chelsea</h3>
-          <h3>1X</h3>
-          <AiFillBank size={20} className='icon'/>
-        </div>
+<div>
+        {/* {
+          Data.map((ali,key) =>{
+return(
+  <div className='prediction' key={key}>
+  <h3>{ali.fixture}</h3>
+  <h3>{ali.prediction}</h3>
+  <div className='icon'>{ali.icon}</div>
+</div>
+ 
+)
+          })
+        } */}
+        {
+          Data.map(({fixture,prediction,icon}, key) =>{
+            return(
+              <div className='prediction' key={key}>
+              <h3>{fixture}</h3>
+              <h3>{prediction}</h3>
+              <div className='icon'>{icon}</div>
+            </div>
+            )
+          })
+        }
+       </div>
        </div>
         </div>
   )

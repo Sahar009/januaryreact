@@ -1,5 +1,5 @@
 #feature{
-    height: 100vh;
+    height: 130vh;
     transition: 2s ease;
     text-align: center;
 }
@@ -8,6 +8,7 @@
 }
 .prediction{
     position: relative;
+    border: 1px solid black;
 }
 .prediction h3 {
     margin: 2rem;
@@ -15,10 +16,13 @@
 .icon{
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 50%;
+    margin-left: 1rem;
 }
 .feature-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: left;
+    height: 70vh;
+
 }
