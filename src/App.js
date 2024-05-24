@@ -8,6 +8,7 @@ import Profile from './components/profile/Profile';
 import Footer from './components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Coin from './components/coin/Coin';
 
 function App() {
 
@@ -21,8 +22,11 @@ function App() {
     <div className='app'>
   <Hero/>
   </div>
-  <Feature/>
-  <Profile/>
+<Coin/>
+
+
+  {/* <Feature/>
+  <Profile/> */}
   </>
   }/>
 
