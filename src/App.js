@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Coin from './components/coin/Coin';
+import Dev from './components/Dev';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
   <h1>Error 404</h1>
   <Link to='/' style={{color:'red', }}>Home</Link>
   </div>}/>
+ <Route path='/dev' element={<Dev/>}/> 
 </Routes>
 <Footer/>
 </BrowserRouter>

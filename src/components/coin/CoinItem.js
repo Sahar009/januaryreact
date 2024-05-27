@@ -2,19 +2,19 @@ import React from 'react'
 import './coin.css'
 import axios from 'axios'
 
-const CoinItem = (props) => {
+const CoinItem = ({market_cap_rank,image,name,market_cap}) => {
   
   return (
     <div className='coin-row'>
-        <p>{props.market_cap_rank}</p>
+        <p>{market_cap_rank}</p>
         <div className='img-symbol'>
-            <img src={props.img}/>
-            <p>{props.id}</p>
+            <img alt='symbol' src={image}/>
+            <p>{name}</p>
         </div>
         <p>23</p>
         <p>24</p>
         <p>3353363</p>
-<p>{props.total_volume.toLocaleString()}</p>        
+<p>{market_cap}</p>        
     </div>
   )
 }
