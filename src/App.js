@@ -10,7 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Coin from './components/coin/Coin';
 import Dev from './components/Dev';
-
+import CoinRoute from './components/routes/CoinRoute'
 function App() {
 
   return (
@@ -37,6 +37,7 @@ function App() {
   <Link to='/' style={{color:'red', }}>Home</Link>
   </div>}/>
  <Route path='/dev' element={<Dev/>}/> 
+ <Route path='/coin/:id' element={<CoinRoute/>}/>
 </Routes>
 <Footer/>
 </BrowserRouter>

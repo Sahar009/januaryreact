@@ -2,6 +2,7 @@ import  { useState,useEffect } from 'react'
 import './coin.css'
 import CoinItem from './CoinItem'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Coin = () => {
 const [coins, setCoins] = useState([])
@@ -57,8 +58,10 @@ useEffect(() => {
         </div>
 
 {
-  coins.map(({market_cap,image,name,market_cap_rank}) =>
-<CoinItem market_cap={market_cap} image={image} name ={name} market_cap_rank={market_cap_rank}/>
+  coins.map(({market_cap,image,name,market_cap_rank,id}) =>
+<Link to={`/coin/${id}`}> 
+  <CoinItem market_cap={market_cap} image={image} name ={name} market_cap_rank={market_cap_rank}/>
+  </Link>
   )
 }
         
